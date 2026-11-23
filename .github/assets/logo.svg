@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024"><defs>
+  <radialGradient id="bg" cx="30%" cy="22%" r="95%">
+    <stop offset="0" stop-color="#4a00ff"/>
+    <stop offset="0.38" stop-color="#4e00e6"/>
+    <stop offset="0.7" stop-color="#230066"/>
+    <stop offset="1" stop-color="#110033"/>
+  </radialGradient>
+  <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+    <stop offset="0" stop-color="#4a00ff" stop-opacity="0.9"/>
+    <stop offset="1" stop-color="#4a00ff" stop-opacity="0"/>
+  </radialGradient>
+  <linearGradient id="lens" x1="0" y1="0" x2="0.6" y2="1">
+    <stop offset="0" stop-color="#fff" stop-opacity="0.30"/>
+    <stop offset="0.42" stop-color="#fff" stop-opacity="0.08"/>
+    <stop offset="1" stop-color="#fff" stop-opacity="0.03"/>
+  </linearGradient>
+  <linearGradient id="rim" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#fff" stop-opacity="0.7"/>
+    <stop offset="0.5" stop-color="#fff" stop-opacity="0.12"/>
+    <stop offset="1" stop-color="#fff" stop-opacity="0.35"/>
+  </linearGradient>
+  <linearGradient id="sheen" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#fff" stop-opacity="0.35"/>
+    <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+  </linearGradient>
+  <filter id="sh" x="-30%" y="-30%" width="160%" height="160%">
+    <feGaussianBlur in="SourceAlpha" stdDeviation="14"/>
+    <feOffset dy="14"/>
+    <feFlood flood-color="#110033" flood-opacity="0.55"/>
+    <feComposite operator="in" in2="SourceGraphic"/>
+    <feComposite operator="in"/>
+    <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+  <filter id="gl" x="-40%" y="-40%" width="180%" height="180%">
+    <feGaussianBlur stdDeviation="22"/>
+  </filter>
+  <clipPath id="c1"><polygon points="0,0 1024,0 1024,632 656,632 410,386 0,386"/></clipPath>
+<clipPath id="c2"><polygon points="0,388 364,388 612,636 1024,636 1024,1024 0,1024"/></clipPath>
+</defs>
+<rect width="1024" height="1024" rx="228" fill="url(#bg)"/>
+<g transform="translate(512 512) scale(1.32) translate(-512 -512)"><polygon points="300,296 724,296 724,384 438,640 724,640 724,728 300,728 300,640 586,384 300,384" fill="#fff" clip-path="url(#c1)"/><polygon points="300,296 724,296 724,384 438,640 724,640 724,728 300,728 300,640 586,384 300,384" fill="#fff" fill-opacity="0.62" clip-path="url(#c2)"/></g></svg>
